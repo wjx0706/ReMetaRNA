@@ -12,7 +12,7 @@ def read_fasta_first_seq(file_path):
     sequences = {}
     for record in SeqIO.parse(file_path, "fasta"):
         sequences[record.id] = str(record.seq)
-        break  # 只取第一个序列
+        break
     return sequences
 
 def generate_train_valid_csv(seq_dir="./seqs", output_dir="./", seed=42, valid_ratio=0.2):
@@ -51,3 +51,4 @@ def generate_train_valid_csv(seq_dir="./seqs", output_dir="./", seed=42, valid_r
 
 if __name__ == "__main__":
     generate_train_valid_csv(seq_dir="./seqs", output_dir="./", seed=42, valid_ratio=0.2)
+
