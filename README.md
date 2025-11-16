@@ -1,6 +1,20 @@
 # ReMetaRNA
-* A MPNN-based RNA inverse folding model developed for the 3rd World Science Intelligence Competition organized by SAIS.
-* Ranked 57/436 in the preliminary round and 35/58 in the semifinal.
+A MPNN-based RNA inverse folding model developed for the 3rd World Science Intelligence Competition organized by SAIS.
+
+## Project Structure
+
+```text
+├─ReMetaRNA
+│  ├─data.py            # Defines dataset construction
+│  ├─modeling_rna.py    # Defines the model, including a contrastive learning model and an inference-specific model
+│  ├─preprocessing.py   # Preprocessing used for training the model
+│  ├─trainer.py         # Defines the training loop as well as evaluation and testing logic
+│  ├─train.py           # Script to run model training
+│  ├─main.py            # Script to run evaluation, including preprocessing logic. Note: only runs inference!
+│  ├─requirements.txt   # Required Python packages for the model
+│  └─final_model.pt     # Trained model weights
+```
+
 
 ## Environment Requirements
 
