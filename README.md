@@ -1,5 +1,6 @@
 # ReMetaRNA
-A MPNN-based RNA inverse folding model developed for the 3rd World Science Intelligence Competition organized by SAIS.
+* A MPNN-based RNA inverse folding model developed for the 3rd World Science Intelligence Competition organized by SAIS.
+* Ranked 57/436 in the preliminary round and 35/58 in the semifinal.
 
 ## Environment Requirements
 
